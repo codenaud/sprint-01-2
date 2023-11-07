@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- compiled css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <title>Sprint 01.2 Bootstrap & SASS | It Academy</title>
+</head>
+
+<body>
+    <header class="container p-4">
+        <!-- navbar [off canvas]  -->
+        <nav class="navbar navbar-expand-lg bg-transparent ">
+            <div class="container">
+                <!-- navbar [logo] -->
+                <a class="navbar-brand mb-2" href="#"><img src="../dist/assets/imagenes/logo-bookmark.svg"
+                        alt="Logo Bookmark" title="Logo Bookmark"></a>
+                <!-- navbar [toggle btn] -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbar [sidebar] -->
+                <div class="container nav-container">
+                    <div class="navbar-sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <!-- navbar [sidebar header] -->
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand pb-2" href="#"><img
+                                    src="../dist/assets/imagenes/logo-bookmark-light.svg" alt="Logo Bookmark Light"
+                                    title="Logo Bookmark Light"></a>
+                            <!-- navbar [sidebar header btn close] -->
+                            <button type="button" class="btn-close btn-close-white shadow-none"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <!-- navbar [sidebar body] -->
+                        <div class="navbar-sidebar-body offcanvas-body text-uppercase nav-fstyle">
+                            <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+                                <li class="nav-item mx-3 active">
+                                    <a class="nav-link" href="#features">Features</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" href="#pricing">Pricing</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- navbar [sidebar login] -->
+                            <div class="navbar-sidebar-btn d-flex justify-content-center align-items-center nav-fs">
+                                <a class="navbar-sidebar-login btn btn-outline-light text-decoration-none px-4 py-2 "
+                                    href="#login">Login</a>
+                            </div>
+                        </div>
+                        <!-- navbar [sidebar social media] -->
+                        <div class="navbar-sidebar-sm d-flex justify-content-center align-items-center pb-5 ">
+                            <!-- <a class="navbar-sidebar-sm px-4 py-2" href="#"><img
+                                    src="../dist/assets/imagenes/icon-facebook.svg" alt="Facebook" title="Facebook"></a> -->
+                            <!-- <a class="navbar-sidebar-sm px-4 py-2 " href="#"><img
+                                        src="../dist/assets/imagenes/icon-twitter.svg" alt="Twitter" title="Twitter"></a> -->
+                            <a class="navbar-sidebar-sm px-4 py-2" href="#"><i class="bi bi-facebook"></i></a>
+                            <a class="navbar-sidebar-sm px-4 py-2 " href="#"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+
+
+    <!-- js -->
+    <script src="js/main.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
