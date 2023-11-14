@@ -1,0 +1,222 @@
+// custom styles
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.offcanvas {
+  background-clip: inherit !important;
+  padding: 20px 30px;
+}
+
+.offcanvas-header {
+  padding-top: 10px !important;
+}
+
+a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none {
+  background-color: hsl(0, 94%, 66%);
+  cursor: pointer;
+  margin-left: 1.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.6rem 1.6rem;
+}
+
+a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none:hover {
+  color: hsl(0, 94%, 66%);
+  border-color: hsl(0, 94%, 66%);
+  background-color: hsl(255, 100%, 100%);
+}
+
+.navbar-sidebar-sm.d-flex.justify-content-center.align-items-center.pb-5 {
+  display: none !important;
+}
+
+a.nav-link {
+  cursor: pointer;
+  color: hsl(229, 31%, 21%);
+}
+
+.nav-fstyle {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+a.nav-link:hover {
+  color: hsl(0, 94%, 66%) !important;
+}
+
+.container.nav-container {
+  padding-right: 0px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../assets/imagenes/icon-hamburger.svg) !important;
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}
+
+.btn-close {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+.button.btn-close.btn-close-white.shadow-none {
+  margin-right: 22px;
+}
+
+.blue-shape {
+  background: hsl(231, 69%, 60%);
+  width: 120px;
+  height: 80px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  div#offcanvasNavbar {
+    width: 100%;
+    max-width: 100vw;
+  }
+  .navbar-sidebar {
+    background-color: hsla(229, 31%, 22%, 0.95) !important;
+    backdrop-filter: blur(1px);
+  }
+  .navbar-sidebar-body li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-sidebar-body a {
+    color: white;
+  }
+  .nav-fstyle {
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .navbar-sidebar-btn {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-sidebar-login {
+    width: 100%;
+    padding: 20px;
+  }
+  .navbar-sidebar-sm {
+    display: flex;
+  }
+  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none.rounded-2 {
+    background-color: transparent;
+    margin-left: 0px;
+  }
+  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none.rounded-2:hover {
+    color: #262b48;
+    border-color: #262b48;
+    background-color: white;
+  }
+  .navbar-sidebar-sm.d-flex.justify-content-center.align-items-center.pb-5 {
+    display: flex !important;
+  }
+  .navbar-sidebar-sm > i {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .navbar-sidebar-sm > i:hover {
+    color: #fb5859;
+  }
+  a.nav-link {
+    cursor: pointer;
+  }
+  a.nav-link:hover {
+    color: #fb5859 !important;
+  }
+  .container.nav-container {
+    padding-right: 20px;
+  }
+}
+/* Nav Tabs*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-bottom: 2px solid red !important;
+}
+.nav-link {
+  &:hover,
+  &:focus {
+    // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+
+    border-color: transparent !important;
+  }
+}
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.6rem !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.btn-light {
+  color: #5a5a66 !important;
+}
+
+/* Letter Spacing */
+.ls-tighter {
+  letter-spacing: -0.05em;
+}
+.ls-tight {
+  letter-spacing: -0.025em;
+}
+.ls-normal {
+  letter-spacing: 0em;
+}
+.ls-wide {
+  letter-spacing: 0.025em;
+}
+.ls-wider {
+  letter-spacing: 0.05em;
+}
+.ls-widest {
+  letter-spacing: 0.1em;
+}
+
+/* font sizes */
+@media (min-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 2.45rem !important;
+  }
+}
+
+/* Background shape*/
+.blue-shape {
+  background: #5368df;
+  width: 610px;
+  height: 350px;
+  border-radius: 50rem 0px 0 50rem;
+  z-index: -1;
+  bottom: 0px;
+  right: -80px;
+}
+
+// custom variables
+$primary: #5266df;
+$font-size-base: 0.9rem;
+
+// import the functions & variables
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+  'customdark': #262b48,
+  'custommuted': #b1b0b7,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
