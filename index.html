@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="container p-4">
+    <header class="container p-4" id="header-nav">
         <!-- navbar [off canvas]  -->
         <nav class="navbar navbar-expand-lg bg-transparent ">
             <div class="container">
@@ -71,76 +71,132 @@
                 </div>
         </nav>
     </header>
-
     <section id="intro">
         <div class="container text-customdark p-4">
             <!-- Columns are always 50% wide, on mobile and desktop -->
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-4 order-lg-1 order-sm-2 ">
-                    <h1 class="fw-semibold pb-2">A Simple Bookmark Manager</h1>
+            <div class="row justify-content-center align-items-center px-lg-0 px-3">
+                <div class="col-lg-4 order-lg-1 order-2 text-center text-lg-start">
+                    <h1 class="fw-bold pb-2 fs-title">A Simple Bookmark Manager</h1>
 
-                    <p class="text-custommuted pb-2">A clean and simple interface to organize your favourite websites.
-                        Open a
-                        new
-                        browser tab and see your sites load instantly. Try it for free.</p>
-                    <div class="d-flex gap-3">
-                        <button type="button" class="btn btn-primary mr-3 shadow-sm">Get it on Chrome</button>
+                    <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5">A clean and simple interface to organize your
+                        favourite
+                        websites.Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
+                        <button type="button" class="btn btn-primary mr-3 shadow-sm ">Get it on Chrome</button>
                         <button type="button" class="btn btn-light shadow-sm">Get it on Firefox</button>
                     </div>
                 </div>
-                <div class="col-lg-8 order-lg-2 order-sm-1 d-flex flex-column position-relative">
+                <div class="col-lg-8 order-lg-2 order-1 mb-5 d-flex justify-content-end position-relative">
                     <img class="img-fluid" src="assets/imagenes/illustration-hero.svg" alt="Illustration Hero">
+                    <div class="blue-shape position-absolute"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container p-4" id="features my-5">
+        <div class="container-md">
+            <div class="text-center mx-auto col-5 px-4">
+                <h2 class="fw-bold text-customdark pb-3">Features</h2>
+                <p class="fs-text text-custommuted">Our aim is to make it quick and easy for you to access
+                    your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+                </p>
+            </div>
+        </div>
+        <!-- tabs 01 -->
+        <div class="container d-flex flex-column my-5 gap-4">
+            <ul class="nav nav-tabs fs-5 justify-content-between gap-5 mx-auto" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link ls-wide pb-4 px-5 active" id="first-tab" data-bs-toggle="tab"
+                        data-bs-target="#first" type="button" role="tab" aria-controls="first"
+                        aria-selected="true">Simple Bookmarking</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link ls-wide pb-4 px-5" id="second-tab" data-bs-toggle="tab"
+                        data-bs-target="#second" type="button" role="tab" aria-controls="second"
+                        aria-selected="false">Speedy Searching</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link ls-wide pb-4 px-5" id="third-tab" data-bs-toggle="tab"
+                        data-bs-target="#third" type="button" role="tab" aria-controls="third"
+                        aria-selected="false">Easy Sharing</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade p-3 show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                    <div class="container text-customdark p-4">
+                        <!-- Columns are always 50% wide, on mobile and desktop -->
+                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
 
-                    <div class="blue-shape position-absolute "></div>
+                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
+                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-1.svg"
+                                    alt="Illustration Hero">
+                                <div class="blue-shape-reverse position-absolute"></div>
+                            </div>
 
+                            <div class="col-lg-4 text-center text-lg-start">
+                                <h1 class="fw-bold pb-2 fs-title">Bookmark in one click</h1>
+                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Organize your bookmarks however
+                                    you like. Our simple drag-and-drop interface gives you complete control over how you
+                                    manage your favourite sites.</p>
+                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
+                                    <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab">
+                    <div class="container text-customdark p-4">
+                        <!-- Columns are always 50% wide, on mobile and desktop -->
+                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
+
+                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
+                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-2.svg"
+                                    alt="Illustration Hero">
+                                <div class="blue-shape-reverse position-absolute"></div>
+                            </div>
+
+                            <div class="col-lg-4 text-center text-lg-start">
+                                <h1 class="fw-bold pb-2 fs-title">Intelligent search</h1>
+                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Our powerful search feature will
+                                    help you find saved sites in no time at all. No need to trawl through all of your
+                                    bookmarks.</p>
+                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
+                                    <button type="button" class="btn btn-primary mr-3 shadow-sm "> More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade p-3" id="third" role="tabpanel" aria-labelledby="third-tab">
+                    <div class="container text-customdark p-4">
+                        <!-- Columns are always 50% wide, on mobile and desktop -->
+                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
+
+                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
+                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-3.svg"
+                                    alt="Illustration Hero">
+                                <div class="blue-shape-reverse position-absolute"></div>
+                            </div>
+
+                            <div class="col-lg-4 text-center text-lg-start">
+                                <h1 class="fw-bold pb-2 fs-title">Share your bookmarks</h1>
+                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Easily share your bookmarks
+                                    and collections with others. Create a shareable link that you can send at the
+                                    click of a button.</p>
+                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
+                                    <button type="button" class="btn btn-primary mr-3 shadow-sm "> More
+                                        Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-
-
-    A Simple Bookmark Manager
-
-    A clean and simple interface to organize your favourite websites. Open a new
-    browser tab and see your sites load instantly. Try it for free.
-
-    Get it on Chrome
-    Get it on Firefox
-
-    Features
-
-    Our aim is to make it quick and easy for you to access your favourite websites.
-    Your bookmarks sync between your devices so you can access them on the go.
-
-    Simple Bookmarking
-    Speedy Searching
-    Easy Sharing
-
-    Bookmark in one click
-
-    Organize your bookmarks however you like. Our simple drag-and-drop interface
-    gives you complete control over how you manage your favourite sites.
-
-    More Info
-
-    Intelligent search
-
-    Our powerful search feature will help you find saved sites in no time at all.
-    No need to trawl through all of your bookmarks.
-
-    More Info
-
-    Share your bookmarks
-
-    Easily share your bookmarks and collections with others. Create a shareable
-    link that you can send at the click of a button.
-
-    More Info
 
     Download the extension
 

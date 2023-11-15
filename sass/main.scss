@@ -2,6 +2,12 @@
 
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* min-width */
+#header-nav,
+#intro {
+  min-width: 375px;
+}
 .offcanvas {
   background-clip: inherit !important;
   padding: 20px 30px;
@@ -73,7 +79,105 @@ a.nav-link:hover {
   -webkit-border-radius: 10px;
 }
 
-@media (max-width: 991px) {
+/* Nav Tabs*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-bottom: 3px solid red !important;
+  color: #262b48 !important;
+  width: fit-content;
+}
+.nav-link {
+  color: #85858d !important;
+  &:hover,
+  &:focus {
+    // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+
+    border-color: transparent !important;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.6rem !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.btn-light {
+  color: #5a5a66 !important;
+}
+
+/* Letter Spacing */
+.ls-tighter {
+  letter-spacing: -0.05em;
+}
+.ls-tight {
+  letter-spacing: -0.025em;
+}
+.ls-normal {
+  letter-spacing: 0em;
+}
+.ls-wide {
+  letter-spacing: 0.025em;
+}
+.ls-wider {
+  letter-spacing: 0.05em;
+}
+.ls-widest {
+  letter-spacing: 0.1em;
+}
+/* Tabs Spacing */
+.mx-tabs {
+  margin: 0 10% 0 10%;
+}
+
+/* Background shape*/
+.blue-shape {
+  background: #5368df;
+  width: 520px;
+  height: 325px;
+  border-radius: 50rem 0px 0 50rem;
+  z-index: -1;
+  bottom: 0;
+  right: -30px;
+}
+.blue-shape-reverse {
+  background: #5368df;
+  width: 520px;
+  height: 325px;
+  border-radius: 0 50rem 50rem 0;
+  z-index: -1;
+  bottom: 0;
+  left: -30px;
+}
+.fs-title {
+  font-size: 2.3rem !important;
+}
+.fs-text {
+  font-size: 1rem !important;
+}
+.fs-title-section {
+  font-size: 2.3rem !important;
+}
+
+/* ----- Responsives */
+// `xl` applies to large devices (desktops, less than 1200px)
+/* font sizes */
+@media (max-width: 1199.98px) {
+  .fs-title {
+    font-size: 1.8rem !important;
+  }
+  .fs-text {
+    font-size: 0.8rem !important;
+  }
+  .fs-se > button {
+    font-size: 0.6rem !important;
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
   div#offcanvasNavbar {
     width: 100%;
     max-width: 100vw;
@@ -110,11 +214,11 @@ a.nav-link:hover {
   .navbar-sidebar-sm {
     display: flex;
   }
-  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none.rounded-2 {
+  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none {
     background-color: transparent;
     margin-left: 0px;
   }
-  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none.rounded-2:hover {
+  a.navbar-sidebar-login.btn.btn-outline-light.text-decoration-none:hover {
     color: #262b48;
     border-color: #262b48;
     background-color: white;
@@ -138,69 +242,64 @@ a.nav-link:hover {
   .container.nav-container {
     padding-right: 20px;
   }
-}
-/* Nav Tabs*/
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  border-bottom: 2px solid red !important;
-}
-.nav-link {
-  &:hover,
-  &:focus {
-    // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
-
-    border-color: transparent !important;
+  .blue-shape {
+    width: 540px !important;
+    height: 320px !important;
+    bottom: 20px !important;
+    right: 0px !important;
+  }
+  .blue-shape-reverse {
+    width: 540px !important;
+    height: 320px !important;
+    bottom: 20px !important;
+    right: 0px !important;
+  }
+  .fs-title {
+    font-size: 2.3rem !important;
+  }
+  .fs-text {
+    font-size: 0.9rem !important;
   }
 }
-/* Buttons */
-.btn {
-  padding: 0.6rem 1.6rem !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-}
-.btn-light {
-  color: #5a5a66 !important;
-}
-
-/* Letter Spacing */
-.ls-tighter {
-  letter-spacing: -0.05em;
-}
-.ls-tight {
-  letter-spacing: -0.025em;
-}
-.ls-normal {
-  letter-spacing: 0em;
-}
-.ls-wide {
-  letter-spacing: 0.025em;
-}
-.ls-wider {
-  letter-spacing: 0.05em;
-}
-.ls-widest {
-  letter-spacing: 0.1em;
-}
-
-/* font sizes */
-@media (min-width: 1200px) {
-  h1,
-  .h1 {
-    font-size: 2.45rem !important;
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .blue-shape {
+    width: 400px !important;
+    height: 230px !important;
+    bottom: 20px !important;
+    right: 0px !important;
+  }
+  .blue-shape-reverse {
+    width: 400px !important;
+    height: 230px !important;
+    bottom: 20px !important;
+    right: 0px !important;
   }
 }
 
-/* Background shape*/
-.blue-shape {
-  background: #5368df;
-  width: 610px;
-  height: 350px;
-  border-radius: 50rem 0px 0 50rem;
-  z-index: -1;
-  bottom: 0px;
-  right: -80px;
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .blue-shape {
+    width: 275px !important;
+    height: 170px !important;
+    bottom: 0px !important;
+    right: 0px !important;
+  }
+  .blue-shape-reverse {
+    width: 275px !important;
+    height: 170px !important;
+    bottom: 0px !important;
+    right: 0px !important;
+  }
+  .fs-title {
+    font-size: 1.8rem !important;
+  }
+  .fs-text {
+    font-size: 1rem !important;
+  }
+  .fs-se > button {
+    font-size: 0.65rem !important;
+  }
 }
 
 // custom variables
