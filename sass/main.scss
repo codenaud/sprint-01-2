@@ -5,7 +5,8 @@
 
 /* min-width */
 #header-nav,
-#intro {
+#intro,
+#features {
   min-width: 375px;
 }
 .offcanvas {
@@ -133,7 +134,7 @@ a.nav-link:hover {
 }
 
 /* Background shape*/
-.blue-shape {
+/* .blue-shape {
   background: #5368df;
   width: 520px;
   height: 325px;
@@ -150,6 +151,44 @@ a.nav-link:hover {
   z-index: -1;
   bottom: 0;
   left: -30px;
+} */
+.blue-shape-bg {
+  background: #5368df;
+  width: 41.5%;
+  height: 325px;
+  border-radius: 50rem 0 0 50rem;
+  z-index: -1;
+  bottom: 72px;
+  right: 0;
+}
+.blue-shape-bg-reverse {
+  background: #5368df;
+  border-radius: 0 50rem 50rem 0;
+  z-index: -1;
+}
+.first-tab-shape {
+  width: 41.5%;
+  height: 325px;
+  bottom: 100px;
+  left: 0;
+}
+.second-tab-shape {
+  width: 41.5%;
+  height: 325px;
+  bottom: 170px;
+  left: 0;
+}
+.ps-custom-second-tab {
+  padding-left: 9% !important;
+}
+.ps-custom-third-tab {
+  padding-left: 7% !important;
+}
+.third-tab-shape {
+  width: 41.5%;
+  height: 325px;
+  bottom: 133px;
+  left: 0;
 }
 .fs-title {
   font-size: 2.3rem !important;
@@ -173,6 +212,12 @@ a.nav-link:hover {
   }
   .fs-se > button {
     font-size: 0.6rem !important;
+  }
+  .blue-shape-bg {
+    width: 52.5% !important;
+    height: 320px !important;
+    top: 140px !important;
+    right: 0px !important;
   }
 }
 
@@ -242,7 +287,7 @@ a.nav-link:hover {
   .container.nav-container {
     padding-right: 20px;
   }
-  .blue-shape {
+  /*   .blue-shape {
     width: 540px !important;
     height: 320px !important;
     bottom: 20px !important;
@@ -252,6 +297,12 @@ a.nav-link:hover {
     width: 540px !important;
     height: 320px !important;
     bottom: 20px !important;
+    right: 0px !important;
+  } */
+  .blue-shape-bg {
+    width: 70% !important;
+    height: 320px !important;
+    top: 160px !important;
     right: 0px !important;
   }
   .fs-title {
@@ -263,7 +314,7 @@ a.nav-link:hover {
 }
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-  .blue-shape {
+  /*   .blue-shape {
     width: 400px !important;
     height: 230px !important;
     bottom: 20px !important;
@@ -273,13 +324,19 @@ a.nav-link:hover {
     width: 400px !important;
     height: 230px !important;
     bottom: 20px !important;
+    right: 0px !important;
+  } */
+  .blue-shape-bg {
+    width: 70% !important;
+    height: 280px !important;
+    top: 110px !important;
     right: 0px !important;
   }
 }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  .blue-shape {
+  /*   .blue-shape {
     width: 275px !important;
     height: 170px !important;
     bottom: 0px !important;
@@ -289,6 +346,13 @@ a.nav-link:hover {
     width: 275px !important;
     height: 170px !important;
     bottom: 0px !important;
+    right: 0px !important;
+  } */
+  .blue-shape-bg {
+    width: 80% !important;
+    min-width: 80% !important;
+    height: 190px !important;
+    top: 80px !important;
     right: 0px !important;
   }
   .fs-title {
