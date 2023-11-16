@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Header  -->
     <header class="container p-4" id="header-nav">
         <!-- navbar [off canvas]  -->
         <nav class="navbar navbar-expand-lg bg-transparent ">
@@ -71,29 +72,7 @@
                 </div>
         </nav>
     </header>
-
-    <!-- <section id="intro">
-        <div class="container text-customdark p-4">
-            <div class="row justify-content-center align-items-center px-lg-0 px-3">
-                <div class="col-lg-4 order-lg-1 order-2 text-center text-lg-start">
-                    <h1 class="fw-bold pb-2 fs-title">A Simple Bookmark Manager</h1>
-
-                    <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5">A clean and simple interface to organize your
-                        favourite
-                        websites.Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
-                        <button type="button" class="btn btn-primary mr-3 shadow-sm ">Get it on Chrome</button>
-                        <button type="button" class="btn btn-light shadow-sm">Get it on Firefox</button>
-                    </div>
-                </div>
-                <div class="col-lg-8 order-lg-2 order-1 mb-5 d-flex justify-content-end position-relative">
-                    <img class="img-fluid" src="assets/imagenes/illustration-hero.svg" alt="Illustration Hero">
-                    <div class="blue-shape position-absolute"></div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    <!-- Hero / Intro  -->
     <section class="container-fluid position-relative" id="intro">
         <div class="blue-shape-bg position-absolute"></div>
         <div class="container text-customdark p-4">
@@ -116,10 +95,8 @@
             </div>
         </div>
     </section>
-
-    <!-- pruebas -->
-
-    <section class="container-fluid p-4 position-relative" id="features">
+    <!-- Features  -->
+    <section class="container-fluid p-4 position-relative my-5" id="features">
         <div class="row">
             <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto px-4 px-sm-2 px-lg-5">
                 <h2 class="h1 fw-semibold text-customdark pb-3">Features</h2>
@@ -128,98 +105,106 @@
                 </p>
             </div>
         </div>
-        <!-- tabs 01 -->
-        <div class="container-fluid d-flex flex-column my-4 gap-4 container-fluid p-4">
+        <!-- features nav-tabs-->
+        <div class="container-fluid d-flex flex-column my-4 gap-4 container-fluid p-4 align-items-center">
 
-            <ul class="nav nav-tabs fs-text justify-content-between gap-5 mx-auto" id="myTab" role="tablist">
+            <ul class="nav nav-tabs fs-text justify-content-center flex-column flex-md-row justify-content-md-between  "
+                id="myTab" role="tablist">
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link ls-wide pb-4 px-5 active" id="first-tab" data-bs-toggle="tab"
+                <li class="nav-item pb-md-0 bb-tab bt-tab" role="presentation">
+                    <button class="nav-link ls-wide pb-4 px-0 px-md-5 active" id="first-tab" data-bs-toggle="tab"
                         data-bs-target="#first" type="button" role="tab" aria-controls="first"
                         aria-selected="true">Simple Bookmarking</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link ls-wide pb-4 px-5" id="second-tab" data-bs-toggle="tab"
+                <li class="nav-item pb-md-0 bb-tab" role="presentation">
+                    <button class="nav-link ls-wide pb-4 px-0 px-md-5" id="second-tab" data-bs-toggle="tab"
                         data-bs-target="#second" type="button" role="tab" aria-controls="second"
                         aria-selected="false">Speedy Searching</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link ls-wide pb-4 px-5" id="third-tab" data-bs-toggle="tab"
+                <li class="nav-item pb-md-0 bb-tab" role="presentation">
+                    <button class="nav-link ls-wide pb-4 px-0 px-md-5 " id="third-tab" data-bs-toggle="tab"
                         data-bs-target="#third" type="button" role="tab" aria-controls="third"
                         aria-selected="false">Easy Sharing</button>
                 </li>
             </ul>
+            <!-- features tabs-->
             <div class="tab-content" id="myTabContent">
-
-                <div class="tab-pane fade p-3 show active" id="first" role="tabpanel" aria-labelledby="first-tab">
-                    <div class="container text-customdark p-4">
+                <!-- tab [first]-->
+                <div class="tab-pane fade p-0 p-sm-2 show active" id="first" role="tabpanel"
+                    aria-labelledby="first-tab">
+                    <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
+                        <!-- blue shape -->
                         <div class="blue-shape-bg-reverse first-tab-shape position-absolute"></div>
-                        <!-- Columns are always 50% wide, on mobile and desktop -->
-                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
-
-                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
+                        <!-- content [img] -->
+                        <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
+                            <div
+                                class="col-lg-8 mb-5 d-flex justify-content-start position-relative ps-custom-first-tab">
                                 <img class="img-fluid" src="assets/imagenes/illustration-features-tab-1.svg"
                                     alt="Illustration Hero">
                                 <div class="blue-shape-reverse position-absolute"></div>
                             </div>
-
-                            <div class="col-lg-4 text-center text-lg-start">
-                                <h1 class="fw-bold pb-2 fs-title">Bookmark in one click</h1>
-                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Organize your bookmarks however
+                            <!-- content [text] -->
+                            <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
+                                <h1 class="fw-semibold pb-2 fs-title">Bookmark in one click</h1>
+                                <p class="text-custommuted pb-2 fs-text"> Organize your bookmarks however
                                     you like. Our simple drag-and-drop interface gives you complete control over how you
                                     manage your favourite sites.</p>
-                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
+                                <div
+                                    class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
                                     <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab">
-                    <div class="container text-customdark p-4">
+                <!-- tab [second]-->
+                <div class="tab-pane fade p-0 p-sm-2" id="second" role="tabpanel" aria-labelledby="second-tab">
+                    <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
+                        <!-- blue shape -->
                         <div class="blue-shape-bg-reverse second-tab-shape position-absolute"></div>
-                        <!-- Columns are always 50% wide, on mobile and desktop -->
-                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
-
+                        <!-- content [img] -->
+                        <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
                             <div
                                 class="col-lg-8 mb-5 d-flex justify-content-start position-relative ps-custom-second-tab">
                                 <img class="img-fluid" src="assets/imagenes/illustration-features-tab-2.svg"
                                     alt="Illustration Hero">
                                 <div class="blue-shape-reverse position-absolute"></div>
                             </div>
-
-                            <div class="col-lg-4 text-center text-lg-start">
-                                <h1 class="fw-bold pb-2 fs-title">Intelligent search</h1>
-                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Our powerful search feature will
+                            <!-- content [text] -->
+                            <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0">
+                                <h1 class="fw-semibold pb-2 fs-title">Intelligent search</h1>
+                                <p class="text-custommuted pb-2 fs-text"> Our powerful search feature will
                                     help you find saved sites in no time at all. No need to trawl through all of your
                                     bookmarks.</p>
-                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
+                                <div
+                                    class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
                                     <button type="button" class="btn btn-primary mr-3 shadow-sm "> More Info</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade p-3" id="third" role="tabpanel" aria-labelledby="third-tab">
-                    <div class="container text-customdark p-4">
+                <!-- tab [third]-->
+                <div class="tab-pane fade p-0 p-sm-2" id="third" role="tabpanel" aria-labelledby="third-tab">
+                    <div class="container text-customdark p-0 p-sm-4 my-5 my-md-0">
                         <div class="blue-shape-bg-reverse third-tab-shape position-absolute"></div>
-                        <!-- Columns are always 50% wide, on mobile and desktop -->
-                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
-
+                        <!-- blue shape -->
+                        <div class="row justify-content-center align-items-center px-lg-0 px-md-0 px-0">
+                            <!-- content [img] -->
                             <div
                                 class="col-lg-8 mb-5 d-flex justify-content-start position-relative ps-custom-third-tab">
                                 <img class="img-fluid" src="assets/imagenes/illustration-features-tab-3.svg"
                                     alt="Illustration Hero">
                                 <div class="blue-shape-reverse position-absolute"></div>
                             </div>
-
-                            <div class="col-lg-4 text-center text-lg-start">
-                                <h1 class="fw-bold pb-2 fs-title">Share your bookmarks</h1>
-                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Easily share your bookmarks
+                            <!-- content [text] -->
+                            <div class="col-lg-4 text-center text-lg-start my-4 my-md-5 my-lg-0 ps-0">
+                                <h1 class="fw-semibold pb-2 fs-title">Share your bookmarks</h1>
+                                <p class="text-custommuted pb-2 fs-text"> Easily share your bookmarks
                                     and collections with others. Create a shareable link that you can send at the
                                     click of a button.</p>
-                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
+                                <div
+                                    class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se d-none d-sm-block">
                                     <button type="button" class="btn btn-primary mr-3 shadow-sm "> More
                                         Info</button>
                                 </div>
@@ -231,132 +216,85 @@
         </div>
     </section>
 
-
-    <!-- fin pruebas -->
-    <!-- 
-    <section class="container p-4" id="features my-5">
-        <div class="container-md">
-            <div class="text-center mx-auto">
-                <h2 class="fw-bold text-customdark pb-3">Features</h2>
-                <p class="fs-text text-custommuted">Our aim is to make it quick and easy for you to access
-                    your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+    <!-- Pricing  -->
+    <section class="container-fluid p-4 position-relative mb-5" id="pricing">
+        <div class="row mb-5">
+            <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto px-4 px-sm-2 px-lg-5">
+                <h2 class="h1 fw-semibold text-customdark pb-3">Download the extension</h2>
+                <p class="fs-text text-custommuted">We’ve got more browsers in the pipeline. Please do let us know if
+                    you’ve got a favourite you’d like us to prioritize.
                 </p>
             </div>
         </div>
-       
-        <div class="container d-flex flex-column my-5 gap-4">
-            <ul class="nav nav-tabs fs-5 justify-content-between gap-5 mx-auto" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link ls-wide pb-4 px-5 active" id="first-tab" data-bs-toggle="tab"
-                        data-bs-target="#first" type="button" role="tab" aria-controls="first"
-                        aria-selected="true">Simple Bookmarking</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link ls-wide pb-4 px-5" id="second-tab" data-bs-toggle="tab"
-                        data-bs-target="#second" type="button" role="tab" aria-controls="second"
-                        aria-selected="false">Speedy Searching</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link ls-wide pb-4 px-5" id="third-tab" data-bs-toggle="tab"
-                        data-bs-target="#third" type="button" role="tab" aria-controls="third"
-                        aria-selected="false">Easy Sharing</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade p-3 show active" id="first" role="tabpanel" aria-labelledby="first-tab">
-                    <div class="container text-customdark p-4">
-                      
-                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
-
-                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
-                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-1.svg"
-                                    alt="Illustration Hero">
-                                <div class="blue-shape-reverse position-absolute"></div>
-                            </div>
-
-                            <div class="col-lg-4 text-center text-lg-start">
-                                <h1 class="fw-bold pb-2 fs-title">Bookmark in one click</h1>
-                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Organize your bookmarks however
-                                    you like. Our simple drag-and-drop interface gives you complete control over how you
-                                    manage your favourite sites.</p>
-                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
-                                    <button type="button" class="btn btn-primary mr-3 shadow-sm ">More Info</button>
-                                </div>
-                            </div>
-
+        <!-- Pricing  Cards-->
+        <div class="container pricing-cards d-flex justify-content-center mb-5">
+            <div class="row gap-5 gap-lg-2">
+                <!-- cards column 1-->
+                <div class="col d-flex justify-content-center align-items-start text-center">
+                    <!-- card chrome -->
+                    <div class="card shadow-card align-items-center pt-5" style="width: 18rem;">
+                        <img src="/assets/imagenes/logo-chrome.svg" class="card-img-top" alt="Chrome Browser logo"
+                            title="Chrome Browser logo">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-customdark pt-3">Add to Chrome</h5>
+                            <p class="card-text pb-3 text-custommuted">Minimum version 62</p>
+                            <img src="/assets/imagenes/bg-dots.svg" class="pb-4" alt="Background Dots"
+                                title="Background Dots">
+                            <a href="#" class="btn btn-primary btn-card">Add & Install Extension</a>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab">
-                    <div class="container text-customdark p-4">
-                     
-                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
-
-                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
-                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-2.svg"
-                                    alt="Illustration Hero">
-                                <div class="blue-shape-reverse position-absolute"></div>
-                            </div>
-
-                            <div class="col-lg-4 text-center text-lg-start">
-                                <h1 class="fw-bold pb-2 fs-title">Intelligent search</h1>
-                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Our powerful search feature will
-                                    help you find saved sites in no time at all. No need to trawl through all of your
-                                    bookmarks.</p>
-                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
-                                    <button type="button" class="btn btn-primary mr-3 shadow-sm "> More Info</button>
-                                </div>
-                            </div>
+                <!-- cards column 2-->
+                <div class="col d-flex justify-content-center align-items-center text-center">
+                    <!-- card firefox -->
+                    <div class="card shadow-card align-items-center pt-5" style="width: 18rem;">
+                        <img src="/assets/imagenes/logo-firefox.svg" class="card-img-top" alt="Firefox Browser logo"
+                            title="Firefox Browser logo" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-customdark pt-3">Add to Firefox</h5>
+                            <p class="card-text pb-3 text-custommuted">Minimum version 55</p>
+                            <img src="/assets/imagenes/bg-dots.svg" class="pb-4" alt="Background Dots"
+                                title="Background Dots">
+                            <a href="#" class="btn btn-primary btn-card">Add & Install Extension</a>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade p-3" id="third" role="tabpanel" aria-labelledby="third-tab">
-                    <div class="container text-customdark p-4">
-                    
-                        <div class="row justify-content-center align-items-center px-lg-0 px-3">
-
-                            <div class="col-lg-8 mb-5 d-flex justify-content-start position-relative">
-                                <img class="img-fluid" src="assets/imagenes/illustration-features-tab-3.svg"
-                                    alt="Illustration Hero">
-                                <div class="blue-shape-reverse position-absolute"></div>
-                            </div>
-
-                            <div class="col-lg-4 text-center text-lg-start">
-                                <h1 class="fw-bold pb-2 fs-title">Share your bookmarks</h1>
-                                <p class="text-custommuted pb-2 fs-text mx-lg-0 mx-5"> Easily share your bookmarks
-                                    and collections with others. Create a shareable link that you can send at the
-                                    click of a button.</p>
-                                <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se">
-                                    <button type="button" class="btn btn-primary mr-3 shadow-sm "> More
-                                        Info</button>
-                                </div>
-                            </div>
+                <!-- cards column 3-->
+                <div class="col d-flex justify-content-center align-items-end text-center">
+                    <!-- card opera -->
+                    <div class="card shadow-card align-items-center pt-5" style="width: 18rem;">
+                        <img src="/assets/imagenes/logo-opera.svg" class="card-img-top" alt="Opera Browser logo"
+                            title="Opera Browser logo">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-customdark pt-3">Add to Opera</h5>
+                            <p class="card-text pb-3"> Minimum version 46</p>
+                            <img src="/assets/imagenes/bg-dots.svg" class="pb-4" alt="Background Dots"
+                                title="Background Dots">
+                            <a href="#" class="btn btn-primary btn-card">Add & Install Extension</a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section> -->
+
+
+    </section>
 
 
 
 
-    Download the extension
 
-    We’ve got more browsers in the pipeline. Please do let us know if you’ve
-    got a favourite you’d like us to prioritize.
 
-    Add to Chrome
-    Minimum version 62
-    Add & Install Extension
 
-    Add to Firefox
-    Minimum version 55
-    Add & Install Extension
 
-    Add to Opera
-    Minimum version 46
-    Add & Install Extension
+
+
+
+
+
+
+
 
     Frequently Asked Questions
 
