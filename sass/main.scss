@@ -134,24 +134,6 @@ a.nav-link:hover {
 }
 
 /* Background shape*/
-/* .blue-shape {
-  background: #5368df;
-  width: 520px;
-  height: 325px;
-  border-radius: 50rem 0px 0 50rem;
-  z-index: -1;
-  bottom: 0;
-  right: -30px;
-}
-.blue-shape-reverse {
-  background: #5368df;
-  width: 520px;
-  height: 325px;
-  border-radius: 0 50rem 50rem 0;
-  z-index: -1;
-  bottom: 0;
-  left: -30px;
-} */
 .blue-shape-bg {
   background: #5368df;
   width: 41.5%;
@@ -178,7 +160,6 @@ a.nav-link:hover {
   bottom: 160px;
   left: 0;
 }
-
 .ps-custom-second-tab {
   padding-left: 10.5% !important;
 }
@@ -224,6 +205,7 @@ a.nav-link:hover {
 // `xl` applies to large devices (desktops, less than 1200px)
 /* font sizes */
 @media (max-width: 1199.98px) {
+  /* Background shape*/
   .fs-title {
     font-size: 1.7rem !important;
   }
@@ -257,6 +239,7 @@ a.nav-link:hover {
     bottom: 120px !important;
     right: 0px !important;
   }
+  /* feature tabs */
   .ps-custom-first-tab {
     padding-left: 0 !important;
   }
@@ -334,18 +317,7 @@ a.nav-link:hover {
   .container.nav-container {
     padding-right: 20px;
   }
-  /*   .blue-shape {
-    width: 540px !important;
-    height: 320px !important;
-    bottom: 20px !important;
-    right: 0px !important;
-  }
-  .blue-shape-reverse {
-    width: 540px !important;
-    height: 320px !important;
-    bottom: 20px !important;
-    right: 0px !important;
-  } */
+  /*  Background shape*/
   .blue-shape-bg {
     width: 70% !important;
     height: 320px !important;
@@ -376,24 +348,14 @@ a.nav-link:hover {
   .fs-text {
     font-size: 0.9rem !important;
   }
+  /* price cards */
   .pricing-cards {
     height: 100%;
   }
 }
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-  /*   .blue-shape {
-    width: 400px !important;
-    height: 230px !important;
-    bottom: 20px !important;
-    right: 0px !important;
-  }
-  .blue-shape-reverse {
-    width: 400px !important;
-    height: 230px !important;
-    bottom: 20px !important;
-    right: 0px !important;
-  } */
+  /* Background shape*/
   .blue-shape-bg {
     width: 70% !important;
     height: 280px !important;
@@ -408,7 +370,7 @@ a.nav-link:hover {
     bottom: 380px !important;
     right: 0px !important;
   }
-
+  /* feature tabs */
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     width: 50%;
@@ -430,6 +392,7 @@ a.nav-link:hover {
     border-top: 1px solid #dee2e6 !important;
     width: 80vw;
   }
+  /* price cards */
   .pricing-cards {
     height: 100%;
   }
@@ -437,18 +400,7 @@ a.nav-link:hover {
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  /*   .blue-shape {
-    width: 275px !important;
-    height: 170px !important;
-    bottom: 0px !important;
-    right: 0px !important;
-  }
-  .blue-shape-reverse {
-    width: 275px !important;
-    height: 170px !important;
-    bottom: 0px !important;
-    right: 0px !important;
-  } */
+  /* Background shape*/
   .blue-shape-bg {
     width: 80% !important;
     min-width: 80% !important;
@@ -487,6 +439,7 @@ a.nav-link:hover {
   .fs-se > button {
     font-size: 0.65rem !important;
   }
+  /* feature tabs */
   .nav-tabs .nav-link.active {
     width: 60% !important;
     margin: auto;
@@ -507,6 +460,7 @@ a.nav-link:hover {
     border-top: 1px solid #dee2e6 !important;
     width: 80vw;
   }
+  /* price cards */
   .pricing-cards {
     height: 100%;
   }
