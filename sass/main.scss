@@ -47,6 +47,9 @@ a.nav-link {
   font-weight: 400;
   letter-spacing: 2px;
 }
+.nav-fstyle-footer {
+  font-size: 10px;
+}
 
 a.nav-link:hover {
   color: hsl(0, 94%, 66%) !important;
@@ -91,12 +94,16 @@ a.nav-link:hover {
 }
 .nav-link {
   color: #85858d !important;
-  &:hover,
+
   &:focus {
     // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
 
     border-color: transparent !important;
   }
+}
+.nav-tabs .nav-link:hover {
+  color: #fb5859 !important;
+  border-color: transparent !important;
 }
 
 /* Buttons */
@@ -105,6 +112,13 @@ a.nav-link:hover {
   font-size: 12px !important;
   font-weight: 600 !important;
 }
+.btn:hover {
+  background-color: transparent !important;
+}
+.btn-primary:hover {
+  color: #5266df !important;
+}
+
 .btn-light {
   color: #5a5a66 !important;
 }
@@ -229,10 +243,14 @@ a.nav-link:hover {
   box-shadow: none !important;
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url(../assets/imagenes/icon-arrow.svg) !important;
+  background-image: url(../assets/imagenes/icon-arrow-red.svg) !important;
+  margin-bottom: 0.6rem !important;
 }
 .accordion-button::after {
   background-image: url(../assets/imagenes/icon-arrow.svg) !important;
+}
+.accordion-button:hover {
+  color: #fb5859 !important;
 }
 /* Contact*/
 .f-rubik {
@@ -250,6 +268,22 @@ a.nav-link:hover {
 /* footer */
 .footer {
   background-color: #262b48;
+}
+.btn-fwi {
+  width: 100% !important;
+}
+/* validating forms */
+.invalid-feedback {
+  background-color: #fb5859;
+  color: white !important;
+  text-align: left;
+  padding: 0.3rem;
+  margin-top: -3px !important;
+  border-radius: 0 0 5px 5px;
+}
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: url(../assets/imagenes/icon-error.svg) !important;
 }
 /* ----- Responsives */
 // `xl` applies to large devices (desktops, less than 1200px)
@@ -513,6 +547,9 @@ a.nav-link:hover {
   /* price cards */
   .pricing-cards {
     height: 100%;
+  }
+  .nav-fstyle-footer {
+    font-size: 12px;
   }
 }
 

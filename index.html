@@ -85,7 +85,8 @@
                         favourite
                         websites.Open a new browser tab and see your sites load instantly. Try it for free.</p>
                     <div class="d-flex gap-3 justify-content-center justify-content-lg-start fs-se pb-3">
-                        <button type="button" class="btn btn-primary mr-3 shadow-sm ">Get it on Chrome</button>
+                        <button type="button" class="btn btn-primary mr-3 shadow-sm btn-primary-outline">Get it on
+                            Chrome</button>
                         <button type="button" class="btn btn-light shadow-sm">Get it on Firefox</button>
                     </div>
                 </div>
@@ -280,7 +281,7 @@
         </div>
     </section>
 
-    <!-- Faqs  -->
+    <!-- Faqs [Accordion] -->
     <section class="container-fluid p-4 position-relative mb-5" id="faqs">
         <div class="row mb-5">
             <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto px-4 px-sm-2 px-lg-5">
@@ -383,7 +384,7 @@
     </section>
 
     <!-- Contact  -->
-    <section class="container-fluid p-4 position-relative mb-5 bg-primary" id="contact">
+    <section class="container-fluid p-4 position-relative bg-primary" id="contact">
         <div class="row mb-5">
             <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto px-4 px-sm-2 px-lg-5 py-3">
                 <small class="text-uppercase text-light ls-widest-plus f-rubik">
@@ -397,18 +398,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-10 col-lg-5 text-center mx-auto">
-                        <div class="row g-3">
-                            <div class="col-8">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-12 col-lg-8">
                                 <!-- Form [Needs validation]-->
                                 <form class="row g-3 needs-validation" novalidate>
                                     <input type="email" class="form-control" id="validationEmail"
                                         aria-describedby="validationEmailFeedback" required>
                                     <div id="validationEmailFeedback" class="invalid-feedback">
-                                        Please provide a valid email.
+                                        Whoops, make shure it's an email.
                                     </div>
                             </div>
-                            <div class="col-auto">
-                                <button type="submit" class="btn btn-danger text-light text-capitalize">
+                            <div class="col-12 col-lg-auto p-0 px-lg-3">
+                                <button type="submit" class="btn btn-danger text-light text-capitalize btn-fwi">
                                     Contact us</button>
                             </div>
                             </form>
@@ -419,30 +420,32 @@
         </div>
     </section>
 
-    Features
-    Pricing
-    Contact
-
-    <footer class="footer">
-        <div class="nav-footer">
+    <footer class="footer ">
+        <div
+            class="container d-flex justify-content-center justify-sm-content-between align-items-center py-3 flex-column flex-sm-row">
             <!-- navbar [logo] -->
-            <div class="brand-footer">
+            <div class="col-auto col-lg-2 py-3 py-sm-0 pb-sm-0">
                 <a class="navbar-brand" href="#"><img src="assets/imagenes/logo-bookmark-footer.svg" alt="Logo Bookmark"
                         title="Logo Bookmark"></a>
             </div>
-            <div class="nav-footer-links">
-                <ul class="">
-                    <li class="nav-item mx-3 active">
-                        <a class="nav-link" href="#features">Features</a>
+            <!-- navbar [nav-links]  -->
+            <div class="col-8 nav-fstyle nav-fstyle-footer text-uppercase ">
+                <ul class="navbar-nav d-flex flex-column mb-3 mb-sm-0 align-items-center flex-sm-row mx-sm-3">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-light" href="#features">Features</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a class="nav-link text-light" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link text-light" href="#contact">Contact</a>
                     </li>
                 </ul>
-
+            </div>
+            <!-- navbar [social media]  -->
+            <div class="col-auto col-lg-2 d-flex justify-content-center align-items-center">
+                <a class="nav-link text-light mx-2" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="nav-link text-light mx-2" href="#"><i class="bi bi-twitter-x"></i></a>
             </div>
         </div>
     </footer>
